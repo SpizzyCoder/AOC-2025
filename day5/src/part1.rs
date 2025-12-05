@@ -1,4 +1,4 @@
-pub fn solve(input: String) {
+pub fn solve(input: &str) -> i128 {
     let mut fresh_id_ranges: Vec<(i128, i128)> = Vec::new();
     let mut ids_to_check: Vec<i128> = Vec::new();
     let mut solution: i128 = 0;
@@ -33,5 +33,5 @@ pub fn solve(input: String) {
         }
     }
 
-    println!["{}", solution];
+    return solution;
 }
